@@ -3,15 +3,15 @@ package com.mitemc;
 import com.mitemc.config.Config;
 import com.mitemc.events.AnimalHungerHandler;
 import com.mitemc.events.AnimalManureHandler;
+import com.mitemc.events.BareHandRestrictionHandler;
 import com.mitemc.events.BasalMetabolismHandler;
 import com.mitemc.events.FertilityHandler;
 import com.mitemc.events.LeafStickHandler;
 import com.mitemc.events.MobAttributeEvents;
 import com.mitemc.events.PlayerStatsHandler;
 import com.mitemc.events.RainFishingHandler;
-import com.mitemc.events.RainHungerHandler;
+import com.mitemc.events.SpawnInvincibilityHandler;
 import com.mitemc.events.StarvationWeaknessHandler;
-import com.mitemc.events.TemperatureHungerHandler;
 import com.mitemc.events.TreeFellingHandler;
 import com.mitemc.registries.ModBlockEntities;
 import com.mitemc.registries.ModBlocks;
@@ -52,20 +52,16 @@ public final class MITEMC {
         // Game-bus events (per-tick / world)
         var gameBus = NeoForge.EVENT_BUS;
         gameBus.register(PlayerStatsHandler.class);
-        gameBus.register(BasalMetabolismHandler.class);
-        gameBus.register(RainHungerHandler.class);
+        gameBus.register(BasalMetabolismHandler.class);          // basal + temp + rain hunger combined
+        gameBus.register(BareHandRestrictionHandler.class);      // can't punch logs/stone/metal
+        gameBus.register(SpawnInvincibilityHandler.class);       // 30 s grace period
         gameBus.register(StarvationWeaknessHandler.class);
         gameBus.register(LeafStickHandler.class);
         gameBus.register(AnimalHungerHandler.class);
 
-        // Phase 5 — agriculture, weather, environment
-        // Note: RainCropGrowthHandler is currently a no-op stub on this NeoForge version
-        // (BlockEvent.CropGrowEvent.Pre signature differs), so we don't register it.
         gameBus.register(RainFishingHandler.class);
-        gameBus.register(TemperatureHungerHandler.class);
         gameBus.register(AnimalManureHandler.class);
 
-        // Phase 6 — Java-backed enchantment handlers
         gameBus.register(TreeFellingHandler.class);
         gameBus.register(FertilityHandler.class);
     }

@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "mitemc:copper_ore",
+    "mitemc:silver_ore",
+    "mitemc:mithril_ore"
+  ],
+  "step": "underground_ores"
+}
