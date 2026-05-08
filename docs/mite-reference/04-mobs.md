@@ -21,22 +21,107 @@ How MITE retunes vanilla mobs and what entities it adds.
 
 ### Wolf (`WolfEntityMixin` — 264 lines)
 
-| Behavior | MITE |
+#### Vanilla wolf (re-tuned)
+
+| Stat | Value |
 |---|---|
-| Spawn behavior | Hostile by default in some biomes (dire wolves) |
-| HP | Vanilla wolf 8 / dire wolf 20 |
-| Damage | Vanilla 4 / dire wolf 6 |
-| Pack behavior | Reinforced — wolves call peers when attacked |
-| Tame requirement | Vanilla bones |
+| Base HP | 8 |
+| Tamed HP | 20 |
+| Attack damage | 4 |
+| Movement speed | 0.30 |
+
+#### Dire wolf variant
+
+| Stat | Value |
+|---|---|
+| Base HP | 16 |
+| Tamed HP | 24 (set to 20 immediately on tame) |
+| Attack damage | 5 |
+| Cannot breed | Always returns false from `canBreedWith` |
+| Spawn condition | Icy biomes (Biome.Category.ICY) at 1/50 chance per spawn (~2%) |
+
+#### Hunger-driven hunting
+
+When a wild wolf is hungry, untamed, has no current target, and isn't already angry:
+
+```
+hunt_check_chance = 1/50  (dire wolf)  or  1/200 (regular wolf)  per tick
+search_radius     = 32 blocks
+```
+
+Among nearby animals (excluding other wolves), the wolf picks the closest:
+
+| Outcome | Trigger |
+|---|---|
+| Hunt animal | Closest non-wolf animal within 32 blocks |
+| Attack player | Nearest visible player within 32 blocks AND (player closer than animal OR random check passes) |
+| Player chase chance when alternative exists | 1/10 (dire) or 1/40 (regular) |
+
+#### Blue moon clause
+
+When `MoonHelper.IsBlueMoon(world.day_time)` returns true and it's nighttime, dire wolves **do not aggressively target players**. They retain their other AI but skip the hunting-aggro check on the player.
+
+#### Dire wolf taming via bone
+
+Right-click with a bone:
+
+| Roll value | Outcome |
+|---|---|
+| < 0.2 | -1 (failure, hostile) |
+| 0.2 – 0.4 | 0 (neutral) |
+| > 0.95 | 1 (success — tames) |
+| 0.4 – 0.95 | reroll: `roll += random.nextFloat() * playerLevel * 0.02`; if final > 1.0 = success |
+
+Higher player XP level = higher chance of dire wolf taming success on the reroll path. Each bone interaction consumes 1 bone (in survival).
+
+On hit, wolves call `((HungryAnimal)this).eat()` — successful attacks count as food.
+
+#### Goals (additive)
+
+The Mixin adds two FoodTargetGoal entries (priority 4) to the targetSelector:
+- A general FoodTargetGoal (any food)
+- A meat-only FoodTargetGoal (`onlyEatsMeat = true`)
 
 ### Creeper (`CreeperEntityMixin` — 228 lines)
 
 | Behavior | MITE |
 |---|---|
-| Explosion radius | Vanilla 3 — but **Infernal Creeper** subtype 5 |
-| Charged behavior | Vanilla |
-| Fire-immunity (Infernal) | Yes |
-| Spawn | Infernal in Nether biomes |
+| Explosion radius (adult) | 3 (vanilla) |
+| Explosion radius (baby) | 1 |
+| Detection range | **64 blocks** (vs. vanilla ~16): creepers actively scan for nearest visible player |
+| Auto-target | Targets nearest player at 64 blocks if `canSee` returns true |
+| Charged behavior | Vanilla (radius × 2) |
+| Fire-immunity (Infernal subtype) | Yes |
+| Baby spawn chance | 5% (currently disabled in source, set false) |
+| Baby movement speed bonus | +50% (`MULTIPLY_BASE` modifier) |
+| Baby XP drop | 2.5× adult |
+| Height offset (adult) | -0.45 (slightly lower than vanilla) |
+
+#### Goal stack (priority → goal)
+
+1. SwimGoal (priority 1)
+2. CreeperIgniteGoal (priority 2)
+3. FleeEntityGoal (Ocelot, 6.0F radius) (priority 3)
+3. FleeEntityGoal (Cat, 6.0F radius) (priority 3)
+4. MeleeAttackGoal (1.0× speed) (priority 4)
+5. WanderAroundFarGoal (0.8× speed) (priority 5)
+6. LookAtEntityGoal (Player, 48.0F) (priority 6)
+6. LookAroundGoal (priority 6)
+
+#### Targets
+
+1. ActiveTargetGoal (PlayerEntity, see-through-glass=true) priority 1
+2. RevengeGoal (no specific class filter) priority 2
+
+#### Persistence (NBT)
+
+| Key | Type | Meaning |
+|---|---|---|
+| `powered` | bool | Charged state |
+| `Fuse` | short | Custom fuse time (default 30) |
+| `ExplosionRadius` | byte | Per-entity radius override (1 for baby) |
+| `ignited` | bool | Manually ignited via flint and steel |
+| `IsBaby` | bool | Baby variant flag |
 
 ### Other vanilla mobs (LivingEntityMixin)
 
