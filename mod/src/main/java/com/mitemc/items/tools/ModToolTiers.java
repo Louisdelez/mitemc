@@ -4,9 +4,9 @@ import com.mitemc.Constants;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.SimpleTier;
-import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 
@@ -45,7 +45,7 @@ public final class ModToolTiers {
             3.0F,  // speed
             0.5F,  // damage bonus
             6,     // enchantability
-            HolderSet.empty()
+            () -> Ingredient.EMPTY
     );
 
     /** Copper: bridge between flint and iron. Mines iron ore but not silver+. */
@@ -55,7 +55,7 @@ public final class ModToolTiers {
             5.0F,
             1.5F,
             12,
-            HolderSet.empty()
+            () -> Ingredient.EMPTY
     );
 
     /** Silver: above iron, below mithril. */
@@ -65,7 +65,7 @@ public final class ModToolTiers {
             7.0F,
             2.0F,
             16,
-            HolderSet.empty()
+            () -> Ingredient.EMPTY
     );
 
     /** Mithril: lava-smelted, fast, high enchantability. */
@@ -75,7 +75,7 @@ public final class ModToolTiers {
             9.0F,
             3.0F,
             22,
-            HolderSet.empty()
+            () -> Ingredient.EMPTY
     );
 
     /** Adamantium: top of MITE's tech tree. Nothing above. */
@@ -85,7 +85,7 @@ public final class ModToolTiers {
             12.0F,
             5.0F,
             10,    // adamantium is sturdy, not magical
-            HolderSet.empty()
+            () -> Ingredient.EMPTY
     );
 
     private ModToolTiers() {}

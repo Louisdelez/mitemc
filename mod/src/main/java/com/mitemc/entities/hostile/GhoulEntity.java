@@ -25,8 +25,8 @@ public class GhoulEntity extends Zombie {
     public boolean isSunSensitive() { return false; }
 
     @Override
-    public boolean doHurtTarget(net.minecraft.server.level.ServerLevel level, Entity target) {
-        boolean hit = super.doHurtTarget(level, target);
+    public boolean doHurtTarget(Entity target) {
+        boolean hit = super.doHurtTarget(target);
         if (hit && target instanceof LivingEntity victim) {
             victim.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 80, 3, false, true));
             victim.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN,      80, 1, false, true));

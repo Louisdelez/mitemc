@@ -21,8 +21,8 @@ public class WightEntity extends Skeleton {
     }
 
     @Override
-    public boolean doHurtTarget(net.minecraft.server.level.ServerLevel level, Entity target) {
-        boolean hit = super.doHurtTarget(level, target);
+    public boolean doHurtTarget(Entity target) {
+        boolean hit = super.doHurtTarget(target);
         if (hit && target instanceof ServerPlayer player) {
             player.causeFoodExhaustion(4.0F);
         }

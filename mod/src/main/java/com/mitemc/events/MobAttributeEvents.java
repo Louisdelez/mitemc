@@ -11,16 +11,17 @@ import com.mitemc.entities.hostile.ShadowEntity;
 import com.mitemc.entities.hostile.WightEntity;
 import com.mitemc.entities.hostile.WoodSpiderEntity;
 import com.mitemc.registries.ModEntities;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.level.levelgen.Heightmap;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
-import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 
 /**
- * Subscribes to mod-bus lifecycle events to declare attribute defaults and spawn placement
- * predicates for the 10 Phase 4 mobs.
+ * Subscribes to mod-bus lifecycle events to declare attribute defaults for the 10 Phase 4 mobs.
+ *
+ * Spawn-placement registration: previously this class also called
+ * {@code RegisterSpawnPlacementsEvent.register} for each entity. The 5-arg signature differs
+ * between MC sub-versions; we currently rely on the BiomeModifier JSON
+ * ({@code data/neoforge/biome_modifier/mitemc_*_spawns.json}) to seed spawns instead.
+ * Re-add the register calls here once the API path is confirmed for the target NeoForge version.
  */
 public final class MobAttributeEvents {
 
@@ -38,69 +39,5 @@ public final class MobAttributeEvents {
         event.put(ModEntities.DEMON_SPIDER.get(),      DemonSpiderEntity.createAttributes().build());
         event.put(ModEntities.INFERNAL_CREEPER.get(),  InfernalCreeperEntity.createAttributes().build());
         event.put(ModEntities.FIRE_ELEMENTAL.get(),    FireElementalEntity.createAttributes().build());
-    }
-
-    @SubscribeEvent
-    public static void onRegisterSpawnPlacements(RegisterSpawnPlacementsEvent event) {
-        // Default monster rules for most. Shadow gets a custom rule (light level 0).
-        event.register(ModEntities.DIRE_WOLF.get(),
-                RegisterSpawnPlacementsEvent.SpawnPlacementType.ON_GROUND,
-                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                Monster::checkMonsterSpawnRules,
-                RegisterSpawnPlacementsEvent.Operation.AND);
-
-        event.register(ModEntities.WOOD_SPIDER.get(),
-                RegisterSpawnPlacementsEvent.SpawnPlacementType.ON_GROUND,
-                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                Monster::checkMonsterSpawnRules,
-                RegisterSpawnPlacementsEvent.Operation.AND);
-
-        event.register(ModEntities.GHOUL.get(),
-                RegisterSpawnPlacementsEvent.SpawnPlacementType.ON_GROUND,
-                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                Monster::checkMonsterSpawnRules,
-                RegisterSpawnPlacementsEvent.Operation.AND);
-
-        event.register(ModEntities.WIGHT.get(),
-                RegisterSpawnPlacementsEvent.SpawnPlacementType.ON_GROUND,
-                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                Monster::checkMonsterSpawnRules,
-                RegisterSpawnPlacementsEvent.Operation.AND);
-
-        event.register(ModEntities.SHADOW.get(),
-                RegisterSpawnPlacementsEvent.SpawnPlacementType.ON_GROUND,
-                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                ShadowEntity::checkShadowSpawnRules,
-                RegisterSpawnPlacementsEvent.Operation.AND);
-
-        event.register(ModEntities.INVISIBLE_STALKER.get(),
-                RegisterSpawnPlacementsEvent.SpawnPlacementType.ON_GROUND,
-                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                Monster::checkMonsterSpawnRules,
-                RegisterSpawnPlacementsEvent.Operation.AND);
-
-        event.register(ModEntities.HELLHOUND.get(),
-                RegisterSpawnPlacementsEvent.SpawnPlacementType.ON_GROUND,
-                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                (et, level, reason, pos, random) -> Monster.checkAnyLightMonsterSpawnRules(et, level, reason, pos, random),
-                RegisterSpawnPlacementsEvent.Operation.AND);
-
-        event.register(ModEntities.DEMON_SPIDER.get(),
-                RegisterSpawnPlacementsEvent.SpawnPlacementType.ON_GROUND,
-                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                Monster::checkMonsterSpawnRules,
-                RegisterSpawnPlacementsEvent.Operation.AND);
-
-        event.register(ModEntities.INFERNAL_CREEPER.get(),
-                RegisterSpawnPlacementsEvent.SpawnPlacementType.ON_GROUND,
-                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                (et, level, reason, pos, random) -> Monster.checkAnyLightMonsterSpawnRules(et, level, reason, pos, random),
-                RegisterSpawnPlacementsEvent.Operation.AND);
-
-        event.register(ModEntities.FIRE_ELEMENTAL.get(),
-                RegisterSpawnPlacementsEvent.SpawnPlacementType.ON_GROUND,
-                Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-                (et, level, reason, pos, random) -> Monster.checkAnyLightMonsterSpawnRules(et, level, reason, pos, random),
-                RegisterSpawnPlacementsEvent.Operation.AND);
     }
 }

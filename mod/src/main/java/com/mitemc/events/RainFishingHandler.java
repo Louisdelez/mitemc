@@ -26,11 +26,13 @@ public final class RainFishingHandler {
         if (!level.isRainingAt(hook.blockPosition())) return;
 
         if (level.random.nextDouble() < Config.RAIN_FISHING_BONUS_CHANCE.get()) {
-            // Drop a small bonus directly at the player (kept simple — no fancy table lookup).
+            // Drop a small bonus at the player (kept simple — no fancy table lookup).
             ItemStack bonus = level.random.nextBoolean()
                     ? new ItemStack(Items.COD)
                     : new ItemStack(Items.KELP);
-            player.spawnAtLocation(level, bonus);
+            net.minecraft.world.entity.item.ItemEntity drop = new net.minecraft.world.entity.item.ItemEntity(
+                    level, player.getX(), player.getY(), player.getZ(), bonus);
+            level.addFreshEntity(drop);
         }
     }
 }

@@ -24,8 +24,10 @@ public final class AnimalManureHandler {
         if (animal.isBaby()) return;
 
         if (animal.getRandom().nextDouble() < Config.ANIMAL_MANURE_PER_TICK_CHANCE.get()) {
-            animal.spawnAtLocation((net.minecraft.server.level.ServerLevel) animal.level(),
+            net.minecraft.world.entity.item.ItemEntity drop = new net.minecraft.world.entity.item.ItemEntity(
+                    animal.level(), animal.getX(), animal.getY(), animal.getZ(),
                     new ItemStack(ModItems.MANURE.get()));
+            animal.level().addFreshEntity(drop);
         }
     }
 }

@@ -51,7 +51,6 @@ public class IronStrongboxBlock extends BaseEntityBlock {
         super.setPlacedBy(level, pos, state, placer, stack);
         if (placer instanceof Player p && level.getBlockEntity(pos) instanceof IronStrongboxBlockEntity be) {
             be.setOwner(p.getUUID());
-            if (stack.hasCustomHoverName()) be.setCustomName(stack.getHoverName());
         }
     }
 

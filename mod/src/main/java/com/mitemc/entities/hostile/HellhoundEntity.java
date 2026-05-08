@@ -28,8 +28,8 @@ public class HellhoundEntity extends Wolf {
     }
 
     @Override
-    public boolean doHurtTarget(net.minecraft.server.level.ServerLevel level, Entity target) {
-        boolean hit = super.doHurtTarget(level, target);
+    public boolean doHurtTarget(Entity target) {
+        boolean hit = super.doHurtTarget(target);
         if (hit) {
             target.igniteForSeconds(5);
         }

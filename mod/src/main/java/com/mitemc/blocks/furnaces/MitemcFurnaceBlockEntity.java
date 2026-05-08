@@ -7,7 +7,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.FurnaceMenu;
-import net.minecraft.world.inventory.RecipeBookType;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.RecipeHolder;
@@ -37,7 +36,7 @@ public class MitemcFurnaceBlockEntity extends AbstractFurnaceBlockEntity {
     private final FurnaceVariant variant;
 
     public MitemcFurnaceBlockEntity(BlockPos pos, BlockState state, FurnaceVariant variant) {
-        super(ModBlockEntities.MITEMC_FURNACE.get(), pos, state, RecipeType.SMELTING, RecipeBookType.FURNACE);
+        super(ModBlockEntities.MITEMC_FURNACE.get(), pos, state, RecipeType.SMELTING);
         this.variant = variant;
     }
 

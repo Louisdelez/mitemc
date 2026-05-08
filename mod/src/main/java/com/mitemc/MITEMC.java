@@ -8,7 +8,6 @@ import com.mitemc.events.FertilityHandler;
 import com.mitemc.events.LeafStickHandler;
 import com.mitemc.events.MobAttributeEvents;
 import com.mitemc.events.PlayerStatsHandler;
-import com.mitemc.events.RainCropGrowthHandler;
 import com.mitemc.events.RainFishingHandler;
 import com.mitemc.events.RainHungerHandler;
 import com.mitemc.events.StarvationWeaknessHandler;
@@ -60,7 +59,8 @@ public final class MITEMC {
         gameBus.register(AnimalHungerHandler.class);
 
         // Phase 5 — agriculture, weather, environment
-        gameBus.register(RainCropGrowthHandler.class);
+        // Note: RainCropGrowthHandler is currently a no-op stub on this NeoForge version
+        // (BlockEvent.CropGrowEvent.Pre signature differs), so we don't register it.
         gameBus.register(RainFishingHandler.class);
         gameBus.register(TemperatureHungerHandler.class);
         gameBus.register(AnimalManureHandler.class);

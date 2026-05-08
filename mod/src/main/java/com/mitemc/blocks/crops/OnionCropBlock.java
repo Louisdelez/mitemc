@@ -49,7 +49,7 @@ public class OnionCropBlock extends CropBlock {
     }
 
     @Override
-    protected ItemStack getCloneItemStack(net.minecraft.world.level.LevelReader level, BlockPos pos, BlockState state, boolean includeData) {
+    public ItemStack getCloneItemStack(net.minecraft.world.level.LevelReader level, BlockPos pos, BlockState state) {
         return new ItemStack(com.mitemc.registries.ModItems.ONION_SEEDS);
     }
 
