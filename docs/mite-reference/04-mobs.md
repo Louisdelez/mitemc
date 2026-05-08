@@ -216,11 +216,86 @@ Cow, pig, sheep, chicken implement a hunger meter. If they go too long without e
 
 Spawn weights from `WeightRegistry.java` (290 lines): each species has a per-biome weight, with deeper layers favoring scarier mobs.
 
+## Living entity base behavior (all mobs + players)
+
+`LivingEntityMixin` retunes damage handling and healing for every `LivingEntity` subclass.
+
+### Natural healing rate
+
+A living entity heals 1 HP every N seconds, where N depends on Fruits saturation (players only):
+
+```
+heal_interval_seconds = 60 * lerp(fruits/max_fruits, 5, 2.5)
+```
+
+| Player Fruits | Heal interval per HP |
+|---|---:|
+| 0 / 5 (empty) | 5 minutes (300 s) |
+| 1.25 / 5 | ~4.4 minutes (~265 s) |
+| 2.5 / 5 (half) | ~3.75 minutes (~225 s) |
+| 3.75 / 5 | ~3.1 minutes (~190 s) |
+| 5 / 5 (full) | 2.5 minutes (150 s) |
+
+For non-player entities (mobs, animals): 1 HP every 5 minutes flat.
+
+### Damage handling order
+
+1. **Invulnerability checks** — creative, dead, client-side, fire-immune with Fire Resistance: damage canceled.
+2. **Shield block check** — if `blockedByShield(source)` returns true and source is not a projectile: routed to `takeShieldHit`.
+3. **Shield damage accumulator** — accumulates damage over a 1-second sliding window.
+4. **Shield disable** — if accum > threshold, disables shield for `60 * (accum / 12)` ticks.
+
+### Shield mechanics
+
+| Property | Value |
+|---|---|
+| Default shield damage threshold (player) | 4 HP |
+| Non-player attacker threshold | `ShieldTier.getProtectionLevel()` |
+| Shield damage accum window | 1 second (resets on inactivity) |
+| Shield disable formula | `60 * (damage_accum / 12)` ticks |
+
+### Knockback multipliers per attacker weapon
+
+| Weapon | Multiplier vs. base 0.5 |
+|---|---:|
+| Bare hand / axe | × 1.0 |
+| Sword | × 1.25 |
+| Shovel | × 1.75 |
+| Trident | × 2.0 |
+
+Status effect bonuses (sprinting attacker only):
+- Speed effect: +0.1 × amplifier
+- Strength effect: +0.05 × amplifier
+
+### Shield disable chance
+
+```
+disable_chance = 0.25 + 0.05 * efficiency_level
+if attacker is sprinting: disable_chance += 0.75
+```
+
+`efficiency_level` is total Efficiency enchantment on attacker gear. If the roll succeeds, shield enters cooldown for the disable time.
+
+### Knockback resistance
+
+`GENERIC_KNOCKBACK_RESISTANCE` attribute honored as in vanilla. Armored mobs resist knockback proportionally.
+
+## Spawn placement table
+
+| Mob class | Placement type | Light level | Heightmap |
+|---|---|---|---|
+| Surface monsters (dire wolf, wood spider) | ON_GROUND | Any | MOTION_BLOCKING_NO_LEAVES |
+| Cave monsters (ghoul, wight, demon spider, invisible stalker, fire elemental) | ON_GROUND | Any | MOTION_BLOCKING_NO_LEAVES |
+| Shadow | ON_GROUND | **Light = 0 only** | MOTION_BLOCKING_NO_LEAVES |
+| Nether monsters (hellhound, infernal creeper) | ON_GROUND | Any | MOTION_BLOCKING_NO_LEAVES |
+
 ## In MITEMC implementation
 
 - **10 hostile entities**: registered with placeholder vanilla renderers and starter stats. **Real custom AI behaviors are not implemented**; only the entity class with stat overrides exists.
 - **Animal hunger**: simplified `AnimalHungerHandler` for cow/sheep/pig/chicken. Real grass-eating + water-drinking goals are on the punch list.
 - **Bear, turkey**: not registered.
 - **Mob mixin tweaks** (zombie persistence, wolf packing, etc.): not implemented.
+- **Living entity natural healing curve** (Fruits-saturation-dependent): not implemented.
+- **Custom shield mechanics** (accumulator, weapon-multiplier knockback, disable chance): not implemented.
 
 See [PROGRESS.md](../../PROGRESS.md) for the punch list.
