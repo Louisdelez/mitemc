@@ -54,4 +54,4 @@ Beliebiges Lore-Buch zu halten löst `mitemc:survival_tree/first_lore` aus. Alle
 ## Siehe auch
 
 - [Fortschritte](/de/reference/advancements/) — wo Lore in den Survival-Tree eingreift.
-- [Roadmap](https://github.com/MITEMC/mitemc/blob/main/ROADMAP.md) — der vollständige Mehrphasenplan.
+- [Roadmap](https://github.com/Louisdelez/mitemc/blob/main/ROADMAP.md) — der vollständige Mehrphasenplan.

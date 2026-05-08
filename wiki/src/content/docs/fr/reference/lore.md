@@ -54,4 +54,4 @@ Tenir n'importe quel livre de lore déclenche `mitemc:survival_tree/first_lore`.
 ## Voir aussi
 
 - [Advancements](/fr/reference/advancements/) — où le lore se branche dans l'arbre de survie.
-- [Roadmap](https://github.com/MITEMC/mitemc/blob/main/ROADMAP.md) — le plan multi-phase complet.
+- [Roadmap](https://github.com/Louisdelez/mitemc/blob/main/ROADMAP.md) — le plan multi-phase complet.

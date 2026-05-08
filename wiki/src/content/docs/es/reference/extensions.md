@@ -52,7 +52,7 @@ Diferido de las fases 1:1:
 - **Partículas custom** (Fase 7.5).
 - **UI de tiempo de craft custom** (Fase 2.5).
 
-Trazadas en [PROGRESS.md](https://github.com/MITEMC/mitemc/blob/main/PROGRESS.md) bajo «Tech debt».
+Trazadas en [PROGRESS.md](https://github.com/Louisdelez/mitemc/blob/main/PROGRESS.md) bajo «Tech debt».
 
 ## Versionado
 
@@ -76,6 +76,6 @@ Para features fuera del spec 1:1:
 
 ## Ver también
 
-- [Roadmap](https://github.com/MITEMC/mitemc/blob/main/ROADMAP.md)
-- [PROGRESS.md](https://github.com/MITEMC/mitemc/blob/main/PROGRESS.md)
-- [Créditos](https://github.com/MITEMC/mitemc/blob/main/docs/CREDITS.md)
+- [Roadmap](https://github.com/Louisdelez/mitemc/blob/main/ROADMAP.md)
+- [PROGRESS.md](https://github.com/Louisdelez/mitemc/blob/main/PROGRESS.md)
+- [Créditos](https://github.com/Louisdelez/mitemc/blob/main/docs/CREDITS.md)

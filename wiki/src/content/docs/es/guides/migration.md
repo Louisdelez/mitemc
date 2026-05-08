@@ -71,7 +71,7 @@ No. MITE 1.6.4 usaba IDs numéricos. MITEMC usa `mitemc:<nombre>` namespaceado.
 
 ## Comunidad del mod
 
-La comunidad MITE china mantiene MITE vivo desde 2014. MITEMC es un esfuerzo separado; reconocimiento en [CREDITS.md](https://github.com/MITEMC/mitemc/blob/main/docs/CREDITS.md).
+La comunidad MITE china mantiene MITE vivo desde 2014. MITEMC es un esfuerzo separado; reconocimiento en [CREDITS.md](https://github.com/Louisdelez/mitemc/blob/main/docs/CREDITS.md).
 
 ## Ver también
 

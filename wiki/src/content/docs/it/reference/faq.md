@@ -66,7 +66,7 @@ La cassaforte controlla livello permesso ≥ 2 per l'override OP.
 
 ### La mia lingua non è supportata.
 
-MITEMC supporta EN/FR/DE/ES/IT. Aggiungere altra: copiare `wiki/src/content/docs/en/`, tradurre, registrare in `wiki/astro.config.mjs`. PR benvenute — vedi [CONTRIBUTING-TRANSLATIONS](https://github.com/MITEMC/mitemc/blob/main/wiki/CONTRIBUTING-TRANSLATIONS.md).
+MITEMC supporta EN/FR/DE/ES/IT. Aggiungere altra: copiare `wiki/src/content/docs/en/`, tradurre, registrare in `wiki/astro.config.mjs`. PR benvenute — vedi [CONTRIBUTING-TRANSLATIONS](https://github.com/Louisdelez/mitemc/blob/main/wiki/CONTRIBUTING-TRANSLATIONS.md).
 
 ### Una traduzione è sbagliata / suona strana.
 
@@ -76,7 +76,7 @@ PR benvenute.
 
 ### E la community MITE cinese (FishModLoader, ModernMite)?
 
-MITEMC mira a NeoForge direttamente; FishModLoader è un loader stile Fabric per MC 1.6.4. Piattaforme diverse — MITEMC non è un port di FishModLoader. Riconoscimenti in [CREDITS.md](https://github.com/MITEMC/mitemc/blob/main/docs/CREDITS.md).
+MITEMC mira a NeoForge direttamente; FishModLoader è un loader stile Fabric per MC 1.6.4. Piattaforme diverse — MITEMC non è un port di FishModLoader. Riconoscimenti in [CREDITS.md](https://github.com/Louisdelez/mitemc/blob/main/docs/CREDITS.md).
 
 ### Funzionano gli strumenti di adamantio nei modpack?
 
@@ -86,4 +86,4 @@ Sì — estendono classi vanilla (SwordItem, AxeItem, PickaxeItem). Tinkers, JEI
 
 ### Ho trovato un bug.
 
-[Apri issue](https://github.com/MITEMC/mitemc/issues) con: versione MC, versione NeoForge, log loader, riproduzione minima. Il PROGRESS log nota incertezze API (es. `BlockEvent.CropGrowEvent.Pre`, `RecipeBookType.FURNACE`).
+[Apri issue](https://github.com/Louisdelez/mitemc/issues) con: versione MC, versione NeoForge, log loader, riproduzione minima. Il PROGRESS log nota incertezze API (es. `BlockEvent.CropGrowEvent.Pre`, `RecipeBookType.FURNACE`).

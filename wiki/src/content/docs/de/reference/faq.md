@@ -77,7 +77,7 @@ Tresor prüft Permission-Level ≥ 2 für den OP-Override. Standard-NeoForge-Ber
 
 ### Meine Sprache fehlt.
 
-MITEMC liefert in EN/FR/DE/ES/IT. Hinzufügen: `wiki/src/content/docs/en/` in einen neuen Locale-Ordner kopieren, übersetzen, Locale in `wiki/astro.config.mjs` ergänzen, `mod/src/main/resources/assets/mitemc/lang/en_us.json` zur Sprachcode-Datei kopieren. PRs willkommen — siehe [CONTRIBUTING-TRANSLATIONS](https://github.com/MITEMC/mitemc/blob/main/wiki/CONTRIBUTING-TRANSLATIONS.md).
+MITEMC liefert in EN/FR/DE/ES/IT. Hinzufügen: `wiki/src/content/docs/en/` in einen neuen Locale-Ordner kopieren, übersetzen, Locale in `wiki/astro.config.mjs` ergänzen, `mod/src/main/resources/assets/mitemc/lang/en_us.json` zur Sprachcode-Datei kopieren. PRs willkommen — siehe [CONTRIBUTING-TRANSLATIONS](https://github.com/Louisdelez/mitemc/blob/main/wiki/CONTRIBUTING-TRANSLATIONS.md).
 
 ### Eine Übersetzung ist falsch / ungelenk.
 
@@ -87,7 +87,7 @@ PRs willkommen.
 
 ### Was ist mit der chinesischen MITE-Community (FishModLoader, ModernMite)?
 
-MITEMC zielt direkt auf NeoForge, FishModLoader ist ein Fabric-artiger Loader für MC 1.6.4. Verschiedene Plattformen — MITEMC ist keine Portierung von FishModLoader-Arbeit. Wir würdigen die moderne MITE-Community in [CREDITS.md](https://github.com/MITEMC/mitemc/blob/main/docs/CREDITS.md).
+MITEMC zielt direkt auf NeoForge, FishModLoader ist ein Fabric-artiger Loader für MC 1.6.4. Verschiedene Plattformen — MITEMC ist keine Portierung von FishModLoader-Arbeit. Wir würdigen die moderne MITE-Community in [CREDITS.md](https://github.com/Louisdelez/mitemc/blob/main/docs/CREDITS.md).
 
 ### Funktionieren Adamantium-Werkzeuge in Modpacks?
 
@@ -97,4 +97,4 @@ Ja — sie erweitern Vanilla-Klassen (SwordItem, AxeItem, PickaxeItem) und nutze
 
 ### Ich habe einen Bug gefunden.
 
-[Issue öffnen](https://github.com/MITEMC/mitemc/issues) mit MC-Version, NeoForge-Version, Loader-Logs, minimaler Reproduktion. Das PROGRESS-Log notiert API-Unsicherheiten (z. B. `BlockEvent.CropGrowEvent.Pre`, `RecipeBookType.FURNACE`) — typischste Erst-Build-Anpassungspunkte.
+[Issue öffnen](https://github.com/Louisdelez/mitemc/issues) mit MC-Version, NeoForge-Version, Loader-Logs, minimaler Reproduktion. Das PROGRESS-Log notiert API-Unsicherheiten (z. B. `BlockEvent.CropGrowEvent.Pre`, `RecipeBookType.FURNACE`) — typischste Erst-Build-Anpassungspunkte.

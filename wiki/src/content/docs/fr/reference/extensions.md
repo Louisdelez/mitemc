@@ -52,7 +52,7 @@ Reportés des phases 1:1 :
 - **Particules custom** pour transitions blight, flips de lore book, refus de strongbox (Phase 7.5).
 - **UI temps de craft custom** — Mixin sur le craft pour forcer recettes temporisées (suite Phase 2.5).
 
-Tracés dans [PROGRESS.md](https://github.com/MITEMC/mitemc/blob/main/PROGRESS.md) sous des listes « Tech debt » glissantes.
+Tracés dans [PROGRESS.md](https://github.com/Louisdelez/mitemc/blob/main/PROGRESS.md) sous des listes « Tech debt » glissantes.
 
 ## Versioning
 
@@ -78,6 +78,6 @@ Le mod de base n'accepte que des features qui se rattachent à l'intention d'Ave
 
 ## Voir aussi
 
-- [Roadmap](https://github.com/MITEMC/mitemc/blob/main/ROADMAP.md) — le plan 1:1 fermé en 8 phases.
-- [PROGRESS.md](https://github.com/MITEMC/mitemc/blob/main/PROGRESS.md) — log de travail vivant, incluant les listes punch.
-- [Crédits](https://github.com/MITEMC/mitemc/blob/main/docs/CREDITS.md) — Avernite, la communauté MITE moderne, et les contributeurs.
+- [Roadmap](https://github.com/Louisdelez/mitemc/blob/main/ROADMAP.md) — le plan 1:1 fermé en 8 phases.
+- [PROGRESS.md](https://github.com/Louisdelez/mitemc/blob/main/PROGRESS.md) — log de travail vivant, incluant les listes punch.
+- [Crédits](https://github.com/Louisdelez/mitemc/blob/main/docs/CREDITS.md) — Avernite, la communauté MITE moderne, et les contributeurs.

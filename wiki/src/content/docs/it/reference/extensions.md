@@ -52,7 +52,7 @@ Rinviato dalle fasi 1:1:
 - **Particelle custom** (Fase 7.5).
 - **UI tempo crafting custom** (Fase 2.5).
 
-Tracciato in [PROGRESS.md](https://github.com/MITEMC/mitemc/blob/main/PROGRESS.md) sotto «Tech debt».
+Tracciato in [PROGRESS.md](https://github.com/Louisdelez/mitemc/blob/main/PROGRESS.md) sotto «Tech debt».
 
 ## Versioning
 
@@ -76,6 +76,6 @@ Per feature fuori dallo spec 1:1:
 
 ## Vedi anche
 
-- [Roadmap](https://github.com/MITEMC/mitemc/blob/main/ROADMAP.md)
-- [PROGRESS.md](https://github.com/MITEMC/mitemc/blob/main/PROGRESS.md)
-- [Crediti](https://github.com/MITEMC/mitemc/blob/main/docs/CREDITS.md)
+- [Roadmap](https://github.com/Louisdelez/mitemc/blob/main/ROADMAP.md)
+- [PROGRESS.md](https://github.com/Louisdelez/mitemc/blob/main/PROGRESS.md)
+- [Crediti](https://github.com/Louisdelez/mitemc/blob/main/docs/CREDITS.md)

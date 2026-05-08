@@ -54,4 +54,4 @@ Tenere un qualunque libro di lore scatena `mitemc:survival_tree/first_lore`. Ten
 ## Vedi anche
 
 - [Traguardi](/it/reference/advancements/) — dove il lore si innesta nel survival-tree.
-- [Roadmap](https://github.com/MITEMC/mitemc/blob/main/ROADMAP.md) — il piano multi-fase completo.
+- [Roadmap](https://github.com/Louisdelez/mitemc/blob/main/ROADMAP.md) — il piano multi-fase completo.

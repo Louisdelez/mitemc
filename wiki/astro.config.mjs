@@ -10,7 +10,7 @@ export default defineConfig({
       description: 'Complete reference for the MITEMC (Minecraft Is Too Easy) mod.',
       logo: { src: './src/assets/logo.svg', replacesTitle: false },
       social: [
-        { icon: 'github', label: 'GitHub', href: 'https://github.com/MITEMC/mitemc' },
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/Louisdelez/mitemc' },
         { icon: 'discord', label: 'Discord', href: 'https://discord.gg/mitemc' },
       ],
       defaultLocale: 'en',
@@ -48,7 +48,7 @@ export default defineConfig({
       pagination: true,
       tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 },
       editLink: {
-        baseUrl: 'https://github.com/MITEMC/mitemc/edit/main/wiki/',
+        baseUrl: 'https://github.com/Louisdelez/mitemc/edit/main/wiki/',
       },
     }),
   ],

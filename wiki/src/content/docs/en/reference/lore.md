@@ -54,4 +54,4 @@ Holding any lore book triggers `mitemc:survival_tree/first_lore`. Holding all fi
 ## See also
 
 - [Advancements](/en/reference/advancements/) — where lore plugs into the survival tree.
-- [Roadmap](https://github.com/MITEMC/mitemc/blob/main/ROADMAP.md) — the full multi-phase plan.
+- [Roadmap](https://github.com/Louisdelez/mitemc/blob/main/ROADMAP.md) — the full multi-phase plan.

@@ -77,7 +77,7 @@ The strongbox checks permission level ≥ 2 for the OP override. Standard NeoFor
 
 ### My language isn't supported.
 
-MITEMC ships in English, French, German, Spanish, Italian. To add another: copy `wiki/src/content/docs/en/` to a new locale folder, translate, add the locale in `wiki/astro.config.mjs`, and copy `mod/src/main/resources/assets/mitemc/lang/en_us.json` to your language's lang code. PRs welcome — see [CONTRIBUTING-TRANSLATIONS](https://github.com/MITEMC/mitemc/blob/main/wiki/CONTRIBUTING-TRANSLATIONS.md).
+MITEMC ships in English, French, German, Spanish, Italian. To add another: copy `wiki/src/content/docs/en/` to a new locale folder, translate, add the locale in `wiki/astro.config.mjs`, and copy `mod/src/main/resources/assets/mitemc/lang/en_us.json` to your language's lang code. PRs welcome — see [CONTRIBUTING-TRANSLATIONS](https://github.com/Louisdelez/mitemc/blob/main/wiki/CONTRIBUTING-TRANSLATIONS.md).
 
 ### A translation is wrong / sounds awkward.
 
@@ -87,7 +87,7 @@ PRs welcome. See the same contributing guide.
 
 ### What about the Chinese MITE community ecosystem (FishModLoader, ModernMite)?
 
-MITEMC targets NeoForge directly, while FishModLoader is a Fabric-style loader for MC 1.6.4. They're different platforms — MITEMC isn't a port of FishModLoader work. We do credit the modern MITE community in [CREDITS.md](https://github.com/MITEMC/mitemc/blob/main/docs/CREDITS.md).
+MITEMC targets NeoForge directly, while FishModLoader is a Fabric-style loader for MC 1.6.4. They're different platforms — MITEMC isn't a port of FishModLoader work. We do credit the modern MITE community in [CREDITS.md](https://github.com/Louisdelez/mitemc/blob/main/docs/CREDITS.md).
 
 ### Will adamantium tools work in modpacks?
 
@@ -97,4 +97,4 @@ Yes — they extend vanilla item classes (SwordItem, AxeItem, PickaxeItem) and u
 
 ### I found a bug.
 
-[Open an issue](https://github.com/MITEMC/mitemc/issues) with: MC version, NeoForge version, mod loader logs, and a minimal reproduction. The PROGRESS log notes API uncertainties (e.g., `BlockEvent.CropGrowEvent.Pre` signature, `RecipeBookType.FURNACE` constant) — those are the most likely first-build adjustment points.
+[Open an issue](https://github.com/Louisdelez/mitemc/issues) with: MC version, NeoForge version, mod loader logs, and a minimal reproduction. The PROGRESS log notes API uncertainties (e.g., `BlockEvent.CropGrowEvent.Pre` signature, `RecipeBookType.FURNACE` constant) — those are the most likely first-build adjustment points.

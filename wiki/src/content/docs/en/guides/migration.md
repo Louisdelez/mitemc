@@ -73,7 +73,7 @@ If you're scripting with `/give`, use the new IDs.
 
 ## Mod community
 
-The Chinese MITE community (Bilibili, QQ groups) has been keeping MITE alive since 2014. MITEMC is a separate effort; we credit them in [CREDITS.md](https://github.com/MITEMC/mitemc/blob/main/docs/CREDITS.md). If you're coming from FishModLoader / ModernMite, MITEMC is a parallel modern port — pick whichever ecosystem fits your group.
+The Chinese MITE community (Bilibili, QQ groups) has been keeping MITE alive since 2014. MITEMC is a separate effort; we credit them in [CREDITS.md](https://github.com/Louisdelez/mitemc/blob/main/docs/CREDITS.md). If you're coming from FishModLoader / ModernMite, MITEMC is a parallel modern port — pick whichever ecosystem fits your group.
 
 ## See also
 

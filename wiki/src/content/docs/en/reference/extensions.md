@@ -52,7 +52,7 @@ These are deferred from the 1:1 phases:
 - **Custom particles** for blight transitions, lore book flips, strongbox refusal (Phase 7.5).
 - **Custom recipe-time UI** — Mixin into crafting to enforce time-based recipes (Phase 2.5 follow-up).
 
-These are tracked in [PROGRESS.md](https://github.com/MITEMC/mitemc/blob/main/PROGRESS.md) under "Tech debt" rolling lists.
+These are tracked in [PROGRESS.md](https://github.com/Louisdelez/mitemc/blob/main/PROGRESS.md) under "Tech debt" rolling lists.
 
 ## Versioning
 
@@ -78,6 +78,6 @@ The base mod accepts only features that map back to Avernite's intent. Extension
 
 ## See also
 
-- [Roadmap](https://github.com/MITEMC/mitemc/blob/main/ROADMAP.md) — the closed 8-phase 1:1 plan.
-- [PROGRESS.md](https://github.com/MITEMC/mitemc/blob/main/PROGRESS.md) — live work log, including punch lists.
-- [Credits](https://github.com/MITEMC/mitemc/blob/main/docs/CREDITS.md) — Avernite, the modern MITE community, and contributors.
+- [Roadmap](https://github.com/Louisdelez/mitemc/blob/main/ROADMAP.md) — the closed 8-phase 1:1 plan.
+- [PROGRESS.md](https://github.com/Louisdelez/mitemc/blob/main/PROGRESS.md) — live work log, including punch lists.
+- [Credits](https://github.com/Louisdelez/mitemc/blob/main/docs/CREDITS.md) — Avernite, the modern MITE community, and contributors.

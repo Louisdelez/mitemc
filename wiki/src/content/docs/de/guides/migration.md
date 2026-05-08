@@ -73,7 +73,7 @@ Beim Skripten mit `/give` die neuen IDs verwenden.
 
 ## Mod-Community
 
-Die chinesische MITE-Community (Bilibili, QQ) hält MITE seit 2014 am Leben. MITEMC ist ein separates Bestreben; Würdigung in [CREDITS.md](https://github.com/MITEMC/mitemc/blob/main/docs/CREDITS.md).
+Die chinesische MITE-Community (Bilibili, QQ) hält MITE seit 2014 am Leben. MITEMC ist ein separates Bestreben; Würdigung in [CREDITS.md](https://github.com/Louisdelez/mitemc/blob/main/docs/CREDITS.md).
 
 ## Siehe auch
 

@@ -54,4 +54,4 @@ Sostener cualquier libro de lore activa `mitemc:survival_tree/first_lore`. Soste
 ## Ver también
 
 - [Logros](/es/reference/advancements/) — dónde encaja el lore en el árbol de supervivencia.
-- [Roadmap](https://github.com/MITEMC/mitemc/blob/main/ROADMAP.md) — el plan multi-fase completo.
+- [Roadmap](https://github.com/Louisdelez/mitemc/blob/main/ROADMAP.md) — el plan multi-fase completo.

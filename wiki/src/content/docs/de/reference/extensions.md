@@ -52,7 +52,7 @@ Aus den 1:1-Phasen verschoben:
 - **Custom-Partikel** für Brand-Übergänge, Lore-Buch-Flips, Tresor-Verweigerung (Phase 7.5).
 - **Custom-Crafting-Zeit-UI** (Phase 2.5-Folge).
 
-Verfolgt in [PROGRESS.md](https://github.com/MITEMC/mitemc/blob/main/PROGRESS.md) unter „Tech debt".
+Verfolgt in [PROGRESS.md](https://github.com/Louisdelez/mitemc/blob/main/PROGRESS.md) unter „Tech debt".
 
 ## Versionierung
 
@@ -78,6 +78,6 @@ Der Basismod akzeptiert nur Features, die zu Avernites Absicht zurückführen. E
 
 ## Siehe auch
 
-- [Roadmap](https://github.com/MITEMC/mitemc/blob/main/ROADMAP.md) — geschlossener 8-Phasen-1:1-Plan.
-- [PROGRESS.md](https://github.com/MITEMC/mitemc/blob/main/PROGRESS.md) — Live-Log mit Punchliste.
-- [Credits](https://github.com/MITEMC/mitemc/blob/main/docs/CREDITS.md) — Avernite, moderne MITE-Community, Mitwirkende.
+- [Roadmap](https://github.com/Louisdelez/mitemc/blob/main/ROADMAP.md) — geschlossener 8-Phasen-1:1-Plan.
+- [PROGRESS.md](https://github.com/Louisdelez/mitemc/blob/main/PROGRESS.md) — Live-Log mit Punchliste.
+- [Credits](https://github.com/Louisdelez/mitemc/blob/main/docs/CREDITS.md) — Avernite, moderne MITE-Community, Mitwirkende.

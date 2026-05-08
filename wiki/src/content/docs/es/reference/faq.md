@@ -66,7 +66,7 @@ La caja fuerte verifica nivel de permiso ≥ 2 para el override OP.
 
 ### Mi idioma no está soportado.
 
-MITEMC soporta EN/FR/DE/ES/IT. Para añadir otro: copiar `wiki/src/content/docs/en/`, traducir, registrar en `wiki/astro.config.mjs`, copiar `mod/src/main/resources/assets/mitemc/lang/en_us.json`. PRs bienvenidos — ver [CONTRIBUTING-TRANSLATIONS](https://github.com/MITEMC/mitemc/blob/main/wiki/CONTRIBUTING-TRANSLATIONS.md).
+MITEMC soporta EN/FR/DE/ES/IT. Para añadir otro: copiar `wiki/src/content/docs/en/`, traducir, registrar en `wiki/astro.config.mjs`, copiar `mod/src/main/resources/assets/mitemc/lang/en_us.json`. PRs bienvenidos — ver [CONTRIBUTING-TRANSLATIONS](https://github.com/Louisdelez/mitemc/blob/main/wiki/CONTRIBUTING-TRANSLATIONS.md).
 
 ### Una traducción es errónea / suena rara.
 
@@ -76,7 +76,7 @@ PRs bienvenidos.
 
 ### ¿Y la comunidad MITE china (FishModLoader, ModernMite)?
 
-MITEMC apunta a NeoForge directamente; FishModLoader es un loader estilo Fabric para MC 1.6.4. Plataformas distintas — MITEMC no es port de FishModLoader. Reconocimiento en [CREDITS.md](https://github.com/MITEMC/mitemc/blob/main/docs/CREDITS.md).
+MITEMC apunta a NeoForge directamente; FishModLoader es un loader estilo Fabric para MC 1.6.4. Plataformas distintas — MITEMC no es port de FishModLoader. Reconocimiento en [CREDITS.md](https://github.com/Louisdelez/mitemc/blob/main/docs/CREDITS.md).
 
 ### ¿Funcionan las herramientas de adamantium en modpacks?
 
@@ -86,4 +86,4 @@ Sí — extienden clases vanilla (SwordItem, AxeItem, PickaxeItem). Tinkers, JEI
 
 ### Encontré un bug.
 
-[Abrir issue](https://github.com/MITEMC/mitemc/issues) con: versión MC, versión NeoForge, logs, reproducción mínima. PROGRESS log marca incertidumbres API (ej. `BlockEvent.CropGrowEvent.Pre`, `RecipeBookType.FURNACE`).
+[Abrir issue](https://github.com/Louisdelez/mitemc/issues) con: versión MC, versión NeoForge, logs, reproducción mínima. PROGRESS log marca incertidumbres API (ej. `BlockEvent.CropGrowEvent.Pre`, `RecipeBookType.FURNACE`).

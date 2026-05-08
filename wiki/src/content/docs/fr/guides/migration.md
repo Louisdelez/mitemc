@@ -73,7 +73,7 @@ Si vous scriptez avec `/give`, utilisez les nouveaux IDs.
 
 ## Communauté du mod
 
-La communauté MITE chinoise (Bilibili, groupes QQ) maintient MITE en vie depuis 2014. MITEMC est un effort séparé ; on les crédite dans [CREDITS.md](https://github.com/MITEMC/mitemc/blob/main/docs/CREDITS.md). Si vous venez de FishModLoader / ModernMite, MITEMC est un portage moderne parallèle — choisissez l'écosystème qui convient à votre groupe.
+La communauté MITE chinoise (Bilibili, groupes QQ) maintient MITE en vie depuis 2014. MITEMC est un effort séparé ; on les crédite dans [CREDITS.md](https://github.com/Louisdelez/mitemc/blob/main/docs/CREDITS.md). Si vous venez de FishModLoader / ModernMite, MITEMC est un portage moderne parallèle — choisissez l'écosystème qui convient à votre groupe.
 
 ## Voir aussi
 

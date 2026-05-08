@@ -77,7 +77,7 @@ Le coffre-fort vérifie le permission level ≥ 2 pour l'override OP. L'intégra
 
 ### Ma langue n'est pas supportée.
 
-MITEMC livre en anglais, français, allemand, espagnol, italien. Pour ajouter une autre : copier `wiki/src/content/docs/en/` vers un nouveau dossier locale, traduire, ajouter le locale dans `wiki/astro.config.mjs`, et copier `mod/src/main/resources/assets/mitemc/lang/en_us.json` vers le code de votre langue. PRs bienvenues — voir [CONTRIBUTING-TRANSLATIONS](https://github.com/MITEMC/mitemc/blob/main/wiki/CONTRIBUTING-TRANSLATIONS.md).
+MITEMC livre en anglais, français, allemand, espagnol, italien. Pour ajouter une autre : copier `wiki/src/content/docs/en/` vers un nouveau dossier locale, traduire, ajouter le locale dans `wiki/astro.config.mjs`, et copier `mod/src/main/resources/assets/mitemc/lang/en_us.json` vers le code de votre langue. PRs bienvenues — voir [CONTRIBUTING-TRANSLATIONS](https://github.com/Louisdelez/mitemc/blob/main/wiki/CONTRIBUTING-TRANSLATIONS.md).
 
 ### Une traduction est fausse / sonne maladroit.
 
@@ -87,7 +87,7 @@ PRs bienvenues. Voir le même guide.
 
 ### Quid de l'écosystème communauté MITE chinoise (FishModLoader, ModernMite) ?
 
-MITEMC vise NeoForge directement, alors que FishModLoader est un loader style Fabric pour MC 1.6.4. Plateformes différentes — MITEMC n'est pas un portage du travail FishModLoader. On crédite la communauté MITE moderne dans [CREDITS.md](https://github.com/MITEMC/mitemc/blob/main/docs/CREDITS.md).
+MITEMC vise NeoForge directement, alors que FishModLoader est un loader style Fabric pour MC 1.6.4. Plateformes différentes — MITEMC n'est pas un portage du travail FishModLoader. On crédite la communauté MITE moderne dans [CREDITS.md](https://github.com/Louisdelez/mitemc/blob/main/docs/CREDITS.md).
 
 ### Les outils en adamantium fonctionneront-ils dans des modpacks ?
 
@@ -97,4 +97,4 @@ Oui — ils étendent les classes vanilla (SwordItem, AxeItem, PickaxeItem) et u
 
 ### J'ai trouvé un bug.
 
-[Ouvrir un issue](https://github.com/MITEMC/mitemc/issues) avec : version MC, version NeoForge, logs du loader, et reproduction minimale. Le PROGRESS log note les incertitudes API (ex. signature `BlockEvent.CropGrowEvent.Pre`, constante `RecipeBookType.FURNACE`) — ce sont les points d'ajustement les plus probables au premier build.
+[Ouvrir un issue](https://github.com/Louisdelez/mitemc/issues) avec : version MC, version NeoForge, logs du loader, et reproduction minimale. Le PROGRESS log note les incertitudes API (ex. signature `BlockEvent.CropGrowEvent.Pre`, constante `RecipeBookType.FURNACE`) — ce sont les points d'ajustement les plus probables au premier build.
