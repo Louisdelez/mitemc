@@ -1,0 +1,16 @@
+{
+  "parent": "mitemc:phase2/first_silver",
+  "display": {
+    "icon": { "id": "mitemc:mithril_ingot" },
+    "title":       { "translate": "advancement.mitemc.phase2.first_mithril.title" },
+    "description": { "translate": "advancement.mitemc.phase2.first_mithril.description" },
+    "frame": "goal",
+    "show_toast": true
+  },
+  "criteria": {
+    "got_mithril": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": "mitemc:mithril_ingot" }] }
+    }
+  }
+}

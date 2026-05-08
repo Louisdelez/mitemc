@@ -1,0 +1,26 @@
+{
+  "parent": "mitemc:phase4/root",
+  "display": {
+    "icon": { "id": "minecraft:bone" },
+    "title":       { "translate": "advancement.mitemc.phase4.first_kill.title" },
+    "description": { "translate": "advancement.mitemc.phase4.first_kill.description" },
+    "frame": "task",
+    "show_toast": true
+  },
+  "criteria": {
+    "killed_dire_wolf":         { "trigger": "minecraft:player_killed_entity", "conditions": { "entity": [{ "condition": "minecraft:entity_properties", "predicate": { "type": "mitemc:dire_wolf" }, "entity": "this" }] } },
+    "killed_wood_spider":       { "trigger": "minecraft:player_killed_entity", "conditions": { "entity": [{ "condition": "minecraft:entity_properties", "predicate": { "type": "mitemc:wood_spider" }, "entity": "this" }] } },
+    "killed_ghoul":             { "trigger": "minecraft:player_killed_entity", "conditions": { "entity": [{ "condition": "minecraft:entity_properties", "predicate": { "type": "mitemc:ghoul" }, "entity": "this" }] } },
+    "killed_wight":             { "trigger": "minecraft:player_killed_entity", "conditions": { "entity": [{ "condition": "minecraft:entity_properties", "predicate": { "type": "mitemc:wight" }, "entity": "this" }] } },
+    "killed_shadow":            { "trigger": "minecraft:player_killed_entity", "conditions": { "entity": [{ "condition": "minecraft:entity_properties", "predicate": { "type": "mitemc:shadow" }, "entity": "this" }] } },
+    "killed_invisible_stalker": { "trigger": "minecraft:player_killed_entity", "conditions": { "entity": [{ "condition": "minecraft:entity_properties", "predicate": { "type": "mitemc:invisible_stalker" }, "entity": "this" }] } },
+    "killed_hellhound":         { "trigger": "minecraft:player_killed_entity", "conditions": { "entity": [{ "condition": "minecraft:entity_properties", "predicate": { "type": "mitemc:hellhound" }, "entity": "this" }] } },
+    "killed_demon_spider":      { "trigger": "minecraft:player_killed_entity", "conditions": { "entity": [{ "condition": "minecraft:entity_properties", "predicate": { "type": "mitemc:demon_spider" }, "entity": "this" }] } },
+    "killed_infernal_creeper":  { "trigger": "minecraft:player_killed_entity", "conditions": { "entity": [{ "condition": "minecraft:entity_properties", "predicate": { "type": "mitemc:infernal_creeper" }, "entity": "this" }] } },
+    "killed_fire_elemental":    { "trigger": "minecraft:player_killed_entity", "conditions": { "entity": [{ "condition": "minecraft:entity_properties", "predicate": { "type": "mitemc:fire_elemental" }, "entity": "this" }] } }
+  },
+  "requirements": [[
+    "killed_dire_wolf","killed_wood_spider","killed_ghoul","killed_wight","killed_shadow",
+    "killed_invisible_stalker","killed_hellhound","killed_demon_spider","killed_infernal_creeper","killed_fire_elemental"
+  ]]
+}

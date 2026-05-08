@@ -1,0 +1,16 @@
+{
+  "parent": "mitemc:phase2/first_copper",
+  "display": {
+    "icon": { "id": "mitemc:silver_ingot" },
+    "title":       { "translate": "advancement.mitemc.phase2.first_silver.title" },
+    "description": { "translate": "advancement.mitemc.phase2.first_silver.description" },
+    "frame": "task",
+    "show_toast": true
+  },
+  "criteria": {
+    "got_silver": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": "mitemc:silver_ingot" }] }
+    }
+  }
+}

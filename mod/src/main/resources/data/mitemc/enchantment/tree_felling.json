@@ -1,0 +1,12 @@
+{
+  "description": { "translate": "enchantment.mitemc.tree_felling" },
+  "supported_items": "#minecraft:enchantable/sharp_weapon",
+  "primary_items": "#mitemc:tree_felling_axes",
+  "weight": 2,
+  "max_level": 1,
+  "min_cost": { "base": 20, "per_level_above_first": 0 },
+  "max_cost": { "base": 60, "per_level_above_first": 0 },
+  "anvil_cost": 8,
+  "slots": ["mainhand"],
+  "effects": {}
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:writable_book" },
+    { "item": "mitemc:flint_shard" }
+  ],
+  "result": { "id": "mitemc:lore_book_origins", "count": 1 }
+}

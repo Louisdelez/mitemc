@@ -1,0 +1,16 @@
+{
+  "parent": "mitemc:survival_tree/first_metal",
+  "display": {
+    "icon": { "id": "mitemc:iron_strongbox" },
+    "title":       { "translate": "advancement.mitemc.survival.first_strongbox.title" },
+    "description": { "translate": "advancement.mitemc.survival.first_strongbox.description" },
+    "frame": "task",
+    "show_toast": true
+  },
+  "criteria": {
+    "got_strongbox": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": "mitemc:iron_strongbox" }] }
+    }
+  }
+}

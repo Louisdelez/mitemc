@@ -1,0 +1,16 @@
+{
+  "parent": "mitemc:phase3/root",
+  "display": {
+    "icon": { "id": "mitemc:clay_oven" },
+    "title":       { "translate": "advancement.mitemc.phase3.clay_oven.title" },
+    "description": { "translate": "advancement.mitemc.phase3.clay_oven.description" },
+    "frame": "task",
+    "show_toast": true
+  },
+  "criteria": {
+    "got_clay_oven": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": "mitemc:clay_oven" }] }
+    }
+  }
+}

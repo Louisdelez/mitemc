@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": { "item": "mitemc:raw_adamantium_chunk" },
+  "result": { "id": "mitemc:adamantium_ingot" },
+  "experience": 1.5,
+  "cookingtime": 200
+}

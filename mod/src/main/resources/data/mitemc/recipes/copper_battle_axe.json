@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": ["MMM", "MSM", " S "],
+  "key": {
+    "M": { "item": "mitemc:copper_ingot" },
+    "S": { "item": "minecraft:stick" }
+  },
+  "result": { "id": "mitemc:copper_battle_axe", "count": 1 }
+}

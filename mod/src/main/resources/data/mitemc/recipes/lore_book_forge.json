@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:writable_book" },
+    { "item": "mitemc:copper_ingot" }
+  ],
+  "result": { "id": "mitemc:lore_book_forge", "count": 1 }
+}

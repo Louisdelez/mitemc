@@ -1,0 +1,16 @@
+{
+  "parent": "mitemc:phase1/first_stick",
+  "display": {
+    "icon": { "id": "mitemc:flint_shard" },
+    "title": { "translate": "advancement.mitemc.phase1.first_flint.title" },
+    "description": { "translate": "advancement.mitemc.phase1.first_flint.description" },
+    "frame": "task",
+    "show_toast": true
+  },
+  "criteria": {
+    "got_shard": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": "mitemc:flint_shard" }] }
+    }
+  }
+}

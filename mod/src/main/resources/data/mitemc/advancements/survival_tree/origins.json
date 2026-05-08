@@ -1,0 +1,12 @@
+{
+  "display": {
+    "icon": { "id": "minecraft:flint" },
+    "title":       { "translate": "advancement.mitemc.survival.origins.title" },
+    "description": { "translate": "advancement.mitemc.survival.origins.description" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": { "tick": { "trigger": "minecraft:tick" } }
+}

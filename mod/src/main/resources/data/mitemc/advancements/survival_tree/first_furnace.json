@@ -1,0 +1,18 @@
+{
+  "parent": "mitemc:survival_tree/first_metal",
+  "display": {
+    "icon": { "id": "mitemc:clay_oven" },
+    "title":       { "translate": "advancement.mitemc.survival.first_furnace.title" },
+    "description": { "translate": "advancement.mitemc.survival.first_furnace.description" },
+    "frame": "task",
+    "show_toast": true
+  },
+  "criteria": {
+    "any_furnace": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": [
+        "mitemc:clay_oven", "mitemc:sandstone_oven", "mitemc:obsidian_furnace", "mitemc:netherrack_furnace"
+      ] }] }
+    }
+  }
+}

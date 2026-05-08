@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "age=0,blighted=false": { "model": "mitemc:block/onion_crop_stage0" },
+    "age=1,blighted=false": { "model": "mitemc:block/onion_crop_stage1" },
+    "age=2,blighted=false": { "model": "mitemc:block/onion_crop_stage2" },
+    "age=3,blighted=false": { "model": "mitemc:block/onion_crop_stage3" },
+    "age=4,blighted=false": { "model": "mitemc:block/onion_crop_stage4" },
+    "age=5,blighted=false": { "model": "mitemc:block/onion_crop_stage5" },
+    "age=6,blighted=false": { "model": "mitemc:block/onion_crop_stage6" },
+    "age=7,blighted=false": { "model": "mitemc:block/onion_crop_stage7" },
+    "age=0,blighted=true":  { "model": "mitemc:block/onion_crop_stage0_blighted" },
+    "age=1,blighted=true":  { "model": "mitemc:block/onion_crop_stage1_blighted" },
+    "age=2,blighted=true":  { "model": "mitemc:block/onion_crop_stage2_blighted" },
+    "age=3,blighted=true":  { "model": "mitemc:block/onion_crop_stage3_blighted" },
+    "age=4,blighted=true":  { "model": "mitemc:block/onion_crop_stage4_blighted" },
+    "age=5,blighted=true":  { "model": "mitemc:block/onion_crop_stage5_blighted" },
+    "age=6,blighted=true":  { "model": "mitemc:block/onion_crop_stage6_blighted" },
+    "age=7,blighted=true":  { "model": "mitemc:block/onion_crop_stage7_blighted" }
+  }
+}

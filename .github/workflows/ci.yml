@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  mod:
+    name: Build mod
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Gradle build
+        working-directory: mod
+        run: |
+          chmod +x ./gradlew || true
+          ./gradlew build --no-daemon
+
+  wiki:
+    name: Build wiki + i18n parity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install
+        working-directory: wiki
+        run: npm install --no-audit --no-fund
+      - name: Lint locales
+        run: node scripts/sync-locales.mjs
+      - name: Astro build
+        working-directory: wiki
+        run: npm run build

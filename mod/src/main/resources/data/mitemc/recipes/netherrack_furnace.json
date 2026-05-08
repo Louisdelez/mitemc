@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["NNN", "NOM", "NNN"],
+  "key": {
+    "N": { "item": "minecraft:nether_bricks" },
+    "O": { "item": "mitemc:obsidian_furnace" },
+    "M": { "item": "minecraft:blaze_rod" }
+  },
+  "result": { "id": "mitemc:netherrack_furnace", "count": 1 }
+}

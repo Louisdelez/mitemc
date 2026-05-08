@@ -1,0 +1,17 @@
+{
+  "parent": "mitemc:phase2/first_mithril",
+  "display": {
+    "icon": { "id": "mitemc:adamantium_ingot" },
+    "title":       { "translate": "advancement.mitemc.phase2.first_adamantium.title" },
+    "description": { "translate": "advancement.mitemc.phase2.first_adamantium.description" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "got_adamantium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": "mitemc:adamantium_ingot" }] }
+    }
+  }
+}

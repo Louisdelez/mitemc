@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="8" fill="#15110d"/>
+  <path d="M12 46 L20 24 L32 36 L44 22 L52 46 Z" fill="#c75a1f"/>
+  <text x="32" y="58" text-anchor="middle" font-family="monospace" font-size="10" fill="#f4a874" font-weight="bold">MITE</text>
+</svg>

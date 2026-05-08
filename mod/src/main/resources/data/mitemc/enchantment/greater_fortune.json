@@ -1,0 +1,12 @@
+{
+  "description": { "translate": "enchantment.mitemc.greater_fortune" },
+  "supported_items": "#minecraft:enchantable/mining",
+  "weight": 1,
+  "max_level": 5,
+  "min_cost": { "base": 25, "per_level_above_first": 12 },
+  "max_cost": { "base": 90, "per_level_above_first": 12 },
+  "anvil_cost": 16,
+  "slots": ["mainhand"],
+  "exclusive_set": "#minecraft:exclusive_set/mining",
+  "effects": {}
+}

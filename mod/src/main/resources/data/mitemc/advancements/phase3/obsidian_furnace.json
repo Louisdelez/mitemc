@@ -1,0 +1,16 @@
+{
+  "parent": "mitemc:phase3/clay_oven",
+  "display": {
+    "icon": { "id": "mitemc:obsidian_furnace" },
+    "title":       { "translate": "advancement.mitemc.phase3.obsidian_furnace.title" },
+    "description": { "translate": "advancement.mitemc.phase3.obsidian_furnace.description" },
+    "frame": "goal",
+    "show_toast": true
+  },
+  "criteria": {
+    "got_obsidian_furnace": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": "mitemc:obsidian_furnace" }] }
+    }
+  }
+}

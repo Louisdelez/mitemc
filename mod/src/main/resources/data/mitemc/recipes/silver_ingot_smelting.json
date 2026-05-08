@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": { "item": "mitemc:raw_silver_chunk" },
+  "result": { "id": "mitemc:silver_ingot" },
+  "experience": 0.7,
+  "cookingtime": 200
+}

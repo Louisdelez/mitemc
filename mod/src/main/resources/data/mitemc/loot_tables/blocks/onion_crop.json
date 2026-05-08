@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [{ "type": "minecraft:item", "name": "mitemc:onion_seeds" }]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        { "condition": "minecraft:block_state_property",
+          "block": "mitemc:onion_crop",
+          "properties": { "age": "7", "blighted": "false" } }
+      ],
+      "entries": [{
+        "type": "minecraft:item",
+        "name": "mitemc:onion",
+        "functions": [
+          { "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 1, "max": 2 } }
+        ]
+      }]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        { "condition": "minecraft:block_state_property",
+          "block": "mitemc:onion_crop",
+          "properties": { "age": "7" } }
+      ],
+      "entries": [{
+        "type": "minecraft:item",
+        "name": "mitemc:onion_seeds",
+        "functions": [
+          { "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 0, "max": 2 } },
+          { "function": "minecraft:apply_bonus", "enchantment": "minecraft:fortune", "formula": "minecraft:binomial_with_bonus_count", "parameters": { "extra": 3, "probability": 0.57 } }
+        ]
+      }]
+    }
+  ]
+}

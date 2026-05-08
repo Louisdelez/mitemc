@@ -1,0 +1,4 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": { "layer0": "mitemc:item/mithril_war_hammer" }
+}

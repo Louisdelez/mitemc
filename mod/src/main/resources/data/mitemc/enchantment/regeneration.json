@@ -1,0 +1,24 @@
+{
+  "description": { "translate": "enchantment.mitemc.regeneration" },
+  "supported_items": "#minecraft:enchantable/armor",
+  "weight": 2,
+  "max_level": 2,
+  "min_cost": { "base": 18, "per_level_above_first": 14 },
+  "max_cost": { "base": 80, "per_level_above_first": 14 },
+  "anvil_cost": 8,
+  "slots": ["any"],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:regeneration",
+          "min_duration": 5.0,
+          "max_duration": 5.0,
+          "min_amplifier": 0.0,
+          "max_amplifier": { "type": "minecraft:linear", "base": 0.0, "per_level_above_first": 1.0 }
+        }
+      }
+    ]
+  }
+}

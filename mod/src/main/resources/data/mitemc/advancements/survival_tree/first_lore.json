@@ -1,0 +1,19 @@
+{
+  "parent": "mitemc:survival_tree/origins",
+  "display": {
+    "icon": { "id": "minecraft:writable_book" },
+    "title":       { "translate": "advancement.mitemc.survival.first_lore.title" },
+    "description": { "translate": "advancement.mitemc.survival.first_lore.description" },
+    "frame": "task",
+    "show_toast": true
+  },
+  "criteria": {
+    "any_lore_book": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": [
+        "mitemc:lore_book_origins", "mitemc:lore_book_stone_age", "mitemc:lore_book_forge",
+        "mitemc:lore_book_deep", "mitemc:lore_book_mythic"
+      ] }] }
+    }
+  }
+}

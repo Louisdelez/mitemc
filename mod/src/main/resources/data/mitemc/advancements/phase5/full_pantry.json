@@ -1,0 +1,16 @@
+{
+  "parent": "mitemc:phase5/cure_blight",
+  "display": {
+    "icon": { "id": "minecraft:cake" },
+    "title":       { "translate": "advancement.mitemc.phase5.full_pantry.title" },
+    "description": { "translate": "advancement.mitemc.phase5.full_pantry.description" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "have_onion":  { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": "mitemc:onion",  "count": { "min": 16 } }] } },
+    "have_wheat":  { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": "minecraft:wheat", "count": { "min": 16 } }] } },
+    "have_carrot": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": "minecraft:carrot","count": { "min": 16 } }] } }
+  }
+}

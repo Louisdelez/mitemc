@@ -1,0 +1,20 @@
+{
+  "parent": "mitemc:phase6/first_enchant",
+  "display": {
+    "icon": { "id": "minecraft:nether_star" },
+    "title":       { "translate": "advancement.mitemc.phase6.all_seven.title" },
+    "description": { "translate": "advancement.mitemc.phase6.all_seven.description" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "speed":           { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "predicates": { "minecraft:enchantments": [{ "enchantments": "mitemc:speed" }] } }] } },
+    "stun":            { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "predicates": { "minecraft:enchantments": [{ "enchantments": "mitemc:stun" }] } }] } },
+    "greater_fortune": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "predicates": { "minecraft:enchantments": [{ "enchantments": "mitemc:greater_fortune" }] } }] } },
+    "regeneration":    { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "predicates": { "minecraft:enchantments": [{ "enchantments": "mitemc:regeneration" }] } }] } },
+    "fertility":       { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "predicates": { "minecraft:enchantments": [{ "enchantments": "mitemc:fertility" }] } }] } },
+    "tree_felling":    { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "predicates": { "minecraft:enchantments": [{ "enchantments": "mitemc:tree_felling" }] } }] } },
+    "vampiric":        { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "predicates": { "minecraft:enchantments": [{ "enchantments": "mitemc:vampiric" }] } }] } }
+  }
+}

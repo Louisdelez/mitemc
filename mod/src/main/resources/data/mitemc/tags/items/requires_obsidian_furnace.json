@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "mitemc:mithril_ingot",
+    "mitemc:raw_mithril_chunk",
+    "#mitemc:requires_netherrack_furnace"
+  ]
+}

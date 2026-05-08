@@ -1,0 +1,21 @@
+{
+  "parent": "mitemc:phase5/first_onion",
+  "display": {
+    "icon": { "id": "mitemc:manure" },
+    "title":       { "translate": "advancement.mitemc.phase5.cure_blight.title" },
+    "description": { "translate": "advancement.mitemc.phase5.cure_blight.description" },
+    "frame": "goal",
+    "show_toast": true
+  },
+  "criteria": {
+    "used_manure": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": [{ "items": "mitemc:manure" }],
+        "location": [{
+          "block": { "blocks": "mitemc:onion_crop" }
+        }]
+      }
+    }
+  }
+}

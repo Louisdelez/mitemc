@@ -1,0 +1,4 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": { "crop": "mitemc:block/onion_stage6" }
+}

@@ -1,0 +1,24 @@
+{
+  "parent": "mitemc:phase6/root",
+  "display": {
+    "icon": { "id": "minecraft:experience_bottle" },
+    "title":       { "translate": "advancement.mitemc.phase6.first_enchant.title" },
+    "description": { "translate": "advancement.mitemc.phase6.first_enchant.description" },
+    "frame": "task",
+    "show_toast": true
+  },
+  "criteria": {
+    "any_mitemc_enchant": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{
+          "predicates": {
+            "minecraft:enchantments": [
+              { "enchantments": "#mitemc:all_enchantments" }
+            ]
+          }
+        }]
+      }
+    }
+  }
+}

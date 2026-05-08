@@ -1,0 +1,13 @@
+{
+  "parent": "mitemc:phase5/root",
+  "display": {
+    "icon": { "id": "minecraft:enchanted_book" },
+    "title":       { "translate": "advancement.mitemc.phase6.root.title" },
+    "description": { "translate": "advancement.mitemc.phase6.root.description" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": { "tick": { "trigger": "minecraft:tick" } }
+}

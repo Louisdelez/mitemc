@@ -1,0 +1,16 @@
+{
+  "parent": "mitemc:phase5/root",
+  "display": {
+    "icon": { "id": "mitemc:onion" },
+    "title":       { "translate": "advancement.mitemc.phase5.first_onion.title" },
+    "description": { "translate": "advancement.mitemc.phase5.first_onion.description" },
+    "frame": "task",
+    "show_toast": true
+  },
+  "criteria": {
+    "got_onion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": "mitemc:onion" }] }
+    }
+  }
+}

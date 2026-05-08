@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:wooden_axe",
+    "minecraft:stone_axe",
+    "minecraft:iron_axe",
+    "minecraft:golden_axe",
+    "minecraft:diamond_axe",
+    "minecraft:netherite_axe",
+    "mitemc:flint_hatchet", "mitemc:flint_battle_axe",
+    "mitemc:copper_hatchet", "mitemc:copper_battle_axe",
+    "mitemc:silver_hatchet", "mitemc:silver_battle_axe",
+    "mitemc:mithril_hatchet", "mitemc:mithril_battle_axe",
+    "mitemc:adamantium_hatchet", "mitemc:adamantium_battle_axe"
+  ]
+}

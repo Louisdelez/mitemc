@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:writable_book" },
+    { "item": "minecraft:stone" }
+  ],
+  "result": { "id": "mitemc:lore_book_stone_age", "count": 1 }
+}

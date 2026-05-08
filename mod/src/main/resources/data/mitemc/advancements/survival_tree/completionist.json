@@ -1,0 +1,27 @@
+{
+  "parent": "mitemc:survival_tree/mythic",
+  "display": {
+    "icon": { "id": "minecraft:nether_star" },
+    "title":       { "translate": "advancement.mitemc.survival.completionist.title" },
+    "description": { "translate": "advancement.mitemc.survival.completionist.description" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "adamantium":  { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": "mitemc:adamantium_ingot" }] } },
+    "strongbox":   { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": "mitemc:iron_strongbox" }] } },
+    "all_enchants": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "predicates": { "minecraft:enchantments": [{ "enchantments": "#mitemc:all_enchantments" }] } }]
+      }
+    },
+    "onion":       { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": "mitemc:onion" }] } },
+    "lore":        { "trigger": "minecraft:inventory_changed", "conditions": { "items": [{ "items": [
+      "mitemc:lore_book_origins", "mitemc:lore_book_stone_age", "mitemc:lore_book_forge",
+      "mitemc:lore_book_deep", "mitemc:lore_book_mythic"
+    ] }] } }
+  }
+}

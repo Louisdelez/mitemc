@@ -1,0 +1,17 @@
+{
+  "parent": "mitemc:phase1/root",
+  "display": {
+    "icon": { "id": "minecraft:stick" },
+    "title": { "translate": "advancement.mitemc.phase1.first_stick.title" },
+    "description": { "translate": "advancement.mitemc.phase1.first_stick.description" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "got_stick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": "minecraft:stick" }] }
+    }
+  }
+}

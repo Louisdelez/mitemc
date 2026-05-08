@@ -1,0 +1,13 @@
+{
+  "parent": "mitemc:survival_tree/origins",
+  "display": {
+    "icon": { "id": "minecraft:apple" },
+    "title":       { "translate": "advancement.mitemc.survival.first_food.title" },
+    "description": { "translate": "advancement.mitemc.survival.first_food.description" },
+    "frame": "task",
+    "show_toast": true
+  },
+  "criteria": {
+    "ate_anything": { "trigger": "minecraft:consume_item" }
+  }
+}

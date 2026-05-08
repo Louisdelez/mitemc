@@ -1,0 +1,16 @@
+{
+  "parent": "mitemc:phase6/root",
+  "display": {
+    "icon": { "id": "mitemc:iron_strongbox" },
+    "title":       { "translate": "advancement.mitemc.phase6.strongbox.title" },
+    "description": { "translate": "advancement.mitemc.phase6.strongbox.description" },
+    "frame": "task",
+    "show_toast": true
+  },
+  "criteria": {
+    "got_strongbox": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": "mitemc:iron_strongbox" }] }
+    }
+  }
+}

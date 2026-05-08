@@ -1,0 +1,16 @@
+{
+  "parent": "mitemc:phase2/root",
+  "display": {
+    "icon": { "id": "mitemc:copper_ingot" },
+    "title":       { "translate": "advancement.mitemc.phase2.first_copper.title" },
+    "description": { "translate": "advancement.mitemc.phase2.first_copper.description" },
+    "frame": "task",
+    "show_toast": true
+  },
+  "criteria": {
+    "got_copper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": "mitemc:copper_ingot" }] }
+    }
+  }
+}

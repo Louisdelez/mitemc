@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top":   "mitemc:block/sandstone_oven_top",
+    "front": "mitemc:block/sandstone_oven_front",
+    "side":  "mitemc:block/sandstone_oven_side"
+  }
+}

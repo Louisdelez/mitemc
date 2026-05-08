@@ -1,0 +1,17 @@
+{
+  "parent": "mitemc:phase3/obsidian_furnace",
+  "display": {
+    "icon": { "id": "mitemc:netherrack_furnace" },
+    "title":       { "translate": "advancement.mitemc.phase3.netherrack_furnace.title" },
+    "description": { "translate": "advancement.mitemc.phase3.netherrack_furnace.description" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "got_netherrack_furnace": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": "mitemc:netherrack_furnace" }] }
+    }
+  }
+}

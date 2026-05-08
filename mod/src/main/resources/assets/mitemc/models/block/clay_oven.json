@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top":   "mitemc:block/clay_oven_top",
+    "front": "mitemc:block/clay_oven_front",
+    "side":  "mitemc:block/clay_oven_side"
+  }
+}

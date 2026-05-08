@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["CCC", "C C", "CCC"],
+  "key": { "C": { "item": "minecraft:terracotta" } },
+  "result": { "id": "mitemc:clay_oven", "count": 1 }
+}

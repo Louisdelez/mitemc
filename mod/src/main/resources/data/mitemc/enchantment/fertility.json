@@ -1,0 +1,11 @@
+{
+  "description": { "translate": "enchantment.mitemc.fertility" },
+  "supported_items": "#minecraft:enchantable/farm_equipment",
+  "weight": 3,
+  "max_level": 3,
+  "min_cost": { "base": 12, "per_level_above_first": 10 },
+  "max_cost": { "base": 55, "per_level_above_first": 10 },
+  "anvil_cost": 4,
+  "slots": ["mainhand"],
+  "effects": {}
+}
